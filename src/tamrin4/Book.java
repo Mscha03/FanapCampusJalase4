@@ -1,6 +1,6 @@
 package tamrin4;
 
-public class Book {
+public abstract class Book {
 
     // information of Book
     String title;
@@ -40,13 +40,6 @@ public class Book {
 
 
     // show Information of Book
-    public  void displayInfo()
-    {
-        System.out.println("title: " + title);
-        System.out.println("author of " + title + ":" + author);
-        System.out.println("press of " + title + ":" + press);
-        System.out.println("releaseDate of " + title + ":" + releaseDate);
-        System.out.println("model of " + title + ":" + "Book");
-        System.out.print("\n");
-    }
+    public abstract void displayInfo();
+
 }
